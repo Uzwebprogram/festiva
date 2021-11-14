@@ -1145,7 +1145,7 @@ fieldset[disabled] .s-btn {
 ------------------------------ */
 .s-header__container {
   width: 100%;
-  height: auto;
+  height: 70px;
   display: table;
   padding: .01rem 5.875rem;
 }
@@ -1190,7 +1190,7 @@ fieldset[disabled] .s-btn {
 
 .s-header__logo-link {
   display: inline-block;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .s-header__logo-link:focus, .s-header__logo-link:hover {
@@ -5055,7 +5055,6 @@ header button {
 .content__section {
     grid-area: content__section;
     margin-bottom: 60px;
-    display: grid;
     grid-template-columns: 10% 1fr 10%;
     grid-template-areas:
     ". playlist__one ."
@@ -5077,12 +5076,13 @@ header button {
 .videos {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .video {
-    height: 180px;
-    grid-column-start: span 3;
+    height: 250px;
+    width: 350px;
+    grid-column-start: span 4;
     position: relative;
     transition: var(--ease);
     background-size: cover;
@@ -5122,4 +5122,12 @@ header button {
         grid-column-start: span 12;
     }
 }
-
+.right-menu{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.js__trigger{
+  margin-left: 20px;
+}
